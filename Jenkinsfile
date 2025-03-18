@@ -2,16 +2,17 @@ pipeline {
     agent any
 
     environment {
-        SRN = "PES1UG23CS835-1"
+        SRN = "YOUR_SRN-1"
     }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Starting the build process...'
+                // Intentional Error: Invalid command
                 sh '''
                 cd main
-                g++ hello.cpp -o $SRN
+                g++ invalid_file.cpp -o $SRN
                 '''
             }
         }
