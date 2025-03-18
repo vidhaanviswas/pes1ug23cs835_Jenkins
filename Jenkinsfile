@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SRN = "YOUR_SRN-1"
+        SRN = "PES1UG23CS835-1"
     }
 
     stages {
